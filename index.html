@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chat UI</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-wrapper">
+    <aside class="chat-sidebar">
+      <div class="chat-brand">Cloud<span>Chat</span></div>
+      <div class="chat-user">
+        <div class="avatar">G</div>
+        <div>
+          <p class="user-name">Nishanth </p>
+          <p class="user-status">Online</p>
+        </div>
+      </div>
+      <p class="sidebar-label">Conversations</p>
+      <ul class="chat-list">
+        <li class="chat-item active">
+          <div class="chat-initial">S</div>
+          <div>
+            <p class="chat-title">Support</p>
+            <p class="chat-preview">How can we help you today?</p>
+          </div>
+          <span class="chat-badge">3</span>
+        </li>
+        <li class="chat-item">
+          <div class="chat-initial">B</div>
+          <div>
+            <p class="chat-title">Billing</p>
+            <p class="chat-preview">Your invoice is ready.</p>
+          </div>
+        </li>
+      </ul>
+    </aside>
+
+    <main class="chat-main">
+      <header class="chat-header">
+        <div>
+          <h2>Support</h2>
+          <p>Replies in under 5 minutes.</p>
+        </div>
+        <button class="header-btn">End chat</button>
+      </header>
+
+      <section class="chat-messages">
+        <div class="message-row other">
+          <div class="bubble">
+            Hi nishanth, welcome to CloudFlow support. How can we help you today?
+          </div>
+          <span class="time">09:21</span>
+        </div>
+
+        <div class="message-row self">
+          <div class="bubble">
+            Hi! I want to understand your pricing and free trial.
+          </div>
+          <span class="time">09:22</span>
+        </div>
+
+        <div class="message-row other">
+          <div class="bubble">
+            Sure! You get full access for 14 days, no card required. You can upgrade or cancel any time.
+          </div>
+          <span class="time">09:23</span>
+        </div>
+      </section>
+
+      <form class="chat-input">
+        <input type="text" placeholder="Type your message..." />
+        <button type="submit">Send</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
